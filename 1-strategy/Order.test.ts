@@ -36,10 +36,11 @@ describe(('Strategy test to shipment: Shipment order'), () => {
       const shipmentValue = fornitureOrder.calculateCommonShipment()
       expect(shipmentValue).toBe(25)
     })
-    it('should have the shipmment 10% of eletronic order value to express shipments', () => {
-      fornitureOrder.setValue(500)
-      const shipmentValue = fornitureOrder.calculateExpressShipment()
-      expect(shipmentValue).toBe(50)
+    it('should not be possible to have express shipment', () => {
+      expect(() => {
+        fornitureOrder.setValue(500)
+        const shipmentValue = fornitureOrder.calculateExpressShipment()
+      }).toThrow('Forbiden shipment')    
     })
   })
 

@@ -12,7 +12,12 @@ class EletronicOrder extends Order{
     return this.sectorName
   }
   
-
+  public calculateCommonShipment = () => {
+    return this.getValue() * 0.05
+  }
+  public calculateExpressShipment = () => {
+    return this.getValue() * 0.10
+  }
 }
 
 export default EletronicOrder

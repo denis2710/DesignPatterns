@@ -9,12 +9,9 @@ abstract class Order{
     this.value = value
   }
 
-  public calculateExpressShipment = () =>{
-    return this.value * 0.10
-  }
-  public calculateCommonShipment = () =>{
-    return this.value * 0.05
-  }
+  public abstract calculateExpressShipment: () => number
+  public abstract calculateCommonShipment: () => number
+
 }
 
 export default Order

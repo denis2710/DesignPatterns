@@ -1,0 +1,12 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "tests:strategy": "jest 1-strategy"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.5"
+  }
+}

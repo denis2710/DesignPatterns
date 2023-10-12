@@ -1,4 +1,4 @@
-import Order from "./order";
+import Order from "./Order";
 
 class FornitureOrder extends Order{
   private sectorName: string 

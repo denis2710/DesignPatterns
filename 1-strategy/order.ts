@@ -1,4 +1,4 @@
-class Order{
+abstract class Order{
   private value: number
 
   public getValue = () => {
